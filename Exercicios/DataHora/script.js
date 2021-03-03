@@ -3,11 +3,11 @@ function carregar() {
     var img = window.document.getElementById('imagem')
     var data = new Date() /* data atual */
         // var hora = data.getHours() /* hora atual */
-    var hora = 20
+  var hora = data.getHours()
 
     msg.innerHTML = `Agora são ${hora} horas.`
 
-    if (hora > 0 && hora < 12) {
+    if (hora >= 0 && hora < 12) {
         // bom dia!
         img.src = './manha.png'
         document.body.style.background = '#e6d2aa'
